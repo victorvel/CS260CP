@@ -1,0 +1,14 @@
+.page-footer {
+    color: white;
+    background-color: rgb(31, 30, 30);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer-copyright {
+    background-color: grey;
+}
+.page-footer a {
+    color:white;
+    text-decoration: none;
+}
