@@ -9,4 +9,9 @@ body {
     background-repeat: no-repeat; 
     height: 600px;
     margin-top: -20px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; 
+    color: white; 
 }
