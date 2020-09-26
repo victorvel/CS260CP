@@ -23,11 +23,15 @@
       </div>
     </nav>
 
-      <h1>Todo List</h1>
+    <div id="header-container" class="header">
+      <h2>Todo</h2>
+      <input type="text" id="myInput" placeholder="Title...">
+      <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
       <div class = todo-container>
             <ul>
               <li>This is a Todo item. Add things like homework, readings, etc!</li>
-              <li>This is a second Todo item. They should be able to make as many todos as they want</li>
+              <l class = "checked">This is a second Todo item. They should be able to make as many todos as they want</li>
               <li>When we use JavaScript we will make this interactive so you can add more, cross things out, and delete items.</li>
             </ul>
       </div>
