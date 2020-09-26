@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel = "stylesheet" href="../styles/styles.css">
-    <link rel = "stylesheet" href="../styles/todostyles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/todostyles.css" />
     <title>Todo List</title>
   </head>
   <body>
@@ -25,36 +28,48 @@
 
     <div id="header-container" class="header">
       <h2>Todo</h2>
-      <input type="text" id="myInput" placeholder="Title...">
+      <input type="text" id="myInput" placeholder="Title..." />
       <span onclick="newElement()" class="addBtn">Add</span>
     </div>
-      <div class = todo-container>
-            <ul>
-              <li class = "todo-item">This is a Todo item. Add things like homework, readings, etc!</li>
-              <li class = "checked todo-item">This is a second Todo item. They should be able to make as many todos as they want</li>
-              <li class = "todo-item">When we use JavaScript we will make this interactive so you can add more, cross things out, and delete items.</li>
-            </ul>
-      </div>
-      
+    <div class="todo-container">
+      <ul>
+        <li class="todo-item">
+          This is a Todo item. Add things like homework, readings, etc!
+        </li>
+        <li class="checked todo-item">
+          This is a second Todo item. They should be able to make as many todos
+          as they want
+        </li>
+        <li class="todo-item">
+          When we use JavaScript we will make this interactive so you can add
+          more, cross things out, and delete items.
+        </li>
+      </ul>
+    </div>
+
     <footer class="page-footer bg-blue pt-4 navbar-static-bottom">
       <div class="container-fluid text-center text-md-left">
         <div class="row">
           <div class="col-md-3 mx-auto">
             <!-- Content -->
-            <h5>Zachary King</h5>
+            <h5>Zachary King / Victor Velasco</h5>
           </div>
-          <div class="col-md-3 mx-auto">
-            <h5><a href="mailto: zking17@gmail.com">Email Me</a></h5>
-          </div>
-          <div class="col-md-3 mx-auto">
-            <h5><a href="http://www.linkedin.com/in/theZKing">LinkedIn</a></h5>
-          </div>
+          <!--
+            <div class="col-md-3 mx-auto">
+              <h5><a href="mailto: zking17@gmail.com">Email Me</a></h5>
+            </div>
+            <div class="col-md-3 mx-auto">
+              <h5><a href="http://www.linkedin.com/in/theZKing">LinkedIn</a></h5>
+            </div>
+            -->
         </div>
-        <div class="footer-copyright text-center py-3">
-          <a href="https://github.com/BYU-CS-260-Winter-2020/lab-1-photography-website-zking17-Student.git"> Github Repository</a>
-        </div>
-      </footer> 
-
+      </div>
+      <div class="footer-copyright text-center py-3">
+        <a href="https://github.com/victorvel/CS260CP.git">
+          Github Repository</a
+        >
+      </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </body>
