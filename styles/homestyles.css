@@ -56,6 +56,13 @@ body {
     padding: 15px; 
 
 }
+.body-image {
+    background-image: linear-gradient(to right, rgb(0,0,255,.3) 10%, rgb(0,0,255,.3) 10%), url("../Images/pexels-pixabay-415071.jpg");
+    background-size: cover; 
+    background-position: bottom; 
+    background-repeat: no-repeat; 
+    height: 200px; 
+}
 .page-footer {
     position: relative !important;
 }
