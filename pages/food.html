@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightyellow; 
+            text-align: center;
+        }
+        header a {
+            text-decoration: none; 
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0; 
+            width: 100%;
+            height: 4rem; 
+            background-color: lightgreen;
+        }
+        img {
+            max-width: 400px;
+            width: 100%; 
+            max-height: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p><a href="../index.html">Home</a></p>
+    </header>
+    <h1>Random Pizza Picker</h1>
+    <p>Refresh your page if you would like a new pizza.</p>
+    <h2>Your pizza is: </h2>
+    <div>
+        <img id="food-img" src="" style="display: none;">
+    </div>
+    <footer>
+        <p>Github Repository: <a href="#">Here.</a></p>
+    </footer>
+    <script>
+        console.log("is this working");
+        const url = "https://foodish-api.herokuapp.com/api/images/pizza";
+        fetch(url)
+            .then(function (response) { 
+                return response.json();
+            }).then(function (json) {
+                document.getElementById("food-img").style = "block";
+                document.getElementById("food-img").src = json.image;
+            }); 
+    </script>
+</body>
+</html>
